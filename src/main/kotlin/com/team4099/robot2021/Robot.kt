@@ -4,6 +4,11 @@ import edu.wpi.first.wpilibj.TimedRobot
 import edu.wpi.first.wpilibj2.command.CommandScheduler
 
 object Robot: TimedRobot() {
+
+  init {
+      // ControlBoard.shoot.whileActiveContinuous(ShootCommand())
+  }
+
   override fun robotPeriodic() {
     CommandScheduler.getInstance().run()
   }
