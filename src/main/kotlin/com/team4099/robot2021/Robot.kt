@@ -7,6 +7,7 @@ object Robot: TimedRobot() {
 
   init {
       // ControlBoard.shoot.whileActiveContinuous(ShootCommand())
+    ControlBoard.runIntakeIn.whileActiveContinous(RunIntakeCommand())
   }
 
   override fun robotPeriodic() {

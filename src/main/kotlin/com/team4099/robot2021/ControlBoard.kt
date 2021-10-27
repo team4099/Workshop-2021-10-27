@@ -8,4 +8,8 @@ object ControlBoard {
   private val operator = XboxOneGamepad(1)
 
   val shoot = Trigger { operator.yButton }
+
+  val runIntakeIn = Trigger { operator.aButton }
+
+
 }

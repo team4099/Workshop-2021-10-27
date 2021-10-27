@@ -11,7 +11,7 @@ object Intake: SubsystemBase() {
     motor.restoreFactoryDefaults() //resets to factory default
     motor.burnFlash() //saves all motor controller changes
   }
-  private fun setMotorPower(power:Double){
+  public fun setMotorPower(power:Double){
     motor.set(power)
   }
 }
