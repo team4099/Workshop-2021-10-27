@@ -6,6 +6,6 @@ import edu.wpi.first.wpilibj2.command.button.Trigger
 object ControlBoard {
   private val driver = XboxOneGamepad(0)
   private val operator = XboxOneGamepad(1)
-
+  val runIntakeIn =  Trigger { operator.aButton}
   val shoot = Trigger { operator.yButton }
 }
